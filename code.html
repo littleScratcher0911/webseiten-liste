@@ -1,0 +1,121 @@
+<script>
+        // Der richtige Code
+        const correctCode = "Das Passwort";
+
+        function verifyCode() {
+            // Eingabe abrufen
+            const userInput = document.getElementById("password").value;
+            
+            // Überprüfung
+            if (userInput === correctCode) {
+            window.location="https://jyrfuv.mimo.run/true.html";
+} else {
+              window.location="https://jyrfuv.mimo.run/false.html";
+            }
+        } 
+</script>
+
+ </head>
+     <!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Menüleiste</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Menüleiste */
+        .menu-bar {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .menu-item {
+            position: relative;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .menu-item:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: white;
+            color: black;
+            min-width: 150px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        /* Dropdown anzeigen */
+        .menu-item:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menüleiste -->
+    <div class="menu-bar">
+        <div class="menu-item">
+            Feedback
+            <div class="dropdown">
+                <a href="https://cloudz.fun/de/lukerink">Nachricht Vefassen</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            Einstellungen
+            <div class="dropdown">
+                <a href="https://jyrfuv.mimo.run/index.html">Seite Neu Laden</a>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            Spezielle Befehle für diese Seite
+            <div class="dropdown">
+                <a href="https://google.com">Duch neuen Google Tab erstzen</a>
+                <a href="https://jyrfuv.mimo.run/code.html">Mit Passwort gesicherte Seiten</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+ <body>
+ <h1>Gib jetzt Das Passwort ein</h1>
+ <br>
+ <br>
+ <input placeholder="Passwort" id="password" type="Password" onchange="verifyCode()">
+ <br>
+ <br> 
+<p style="color: gray;">Bei verlassen des Eingabefelds oder drücken von Enter wird das Passwort überprüft.</p>
+ </body>
+ 
